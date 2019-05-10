@@ -29,12 +29,18 @@ function timeChange() {
     } 
 }
 
+const secondsProgress = document.querySelector('.seconds-p');
+
 
 function progressBars() {
-    const now = new Date();
-    const seconds = now.getSeconds();
+    const nowPro = new Date();
+    const seconds = nowPro.getSeconds();
+
 }
+
 
 setInterval(timeChange, 1000);
 timeChange();
 
+setInterval(progressBars, 1000);
+progressBars();

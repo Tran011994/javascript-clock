@@ -72,9 +72,9 @@ h1 {
 }
 
 .minutes-p, .seconds-p {
-  grid-column: 1 / span 1;
+  grid-column: 1 / 1;
 }
 
 .hours-p {
-  grid-column: 1 / span 1;
+  grid-column: 1 / 1;
 }
