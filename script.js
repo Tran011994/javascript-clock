@@ -38,13 +38,15 @@ function progressBars() {
     const nowPro = new Date();
 
     const hours = nowPro.getHours();
-    hoursProgress.style.gridColumn = '1 / ' + hours;
+    hoursProgress.style.gridColumn = '1 / ' + (hours/2);
 
     const minutes = nowPro.getMinutes();
     minutesProgress.style.gridColumn = '1 / ' + minutes;
 
     const seconds = nowPro.getSeconds();
     secondsProgress.style.gridColumn = '1 / ' + seconds;
+
+    console.log(hours);
 
 }
 
