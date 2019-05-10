@@ -1,9 +1,80 @@
 html {
     box-sizing: border-box;
-    }
+}
     
 *,
 *:before,
 *:after {
   box-sizing: inherit;
+}
+
+body {
+  background: rgb(2,0,36);
+  background: linear-gradient(145deg, rgba(2,0,36,1) 30%, rgba(15,68,15,1) 87%);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-attachment: fixed;   
+}
+
+h1 {
+  color: white;
+  font-size: 3rem;
+}
+
+
+/* Class Selectors */
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.time {
+  font-size: 4rem;
+}
+
+/* Overall clock container */
+
+.clock-container {
+  display: flex;
+  width: 30%;
+  text-align: center;
+}
+
+.time-box {
+  flex: 1 1 50%;
+}
+
+/* Grid for progress bars*/
+.progress-bars {
+  display: flex;
+  width: 30%;
+  text-align: center;
+  justify-content: space-between
+}
+
+.pro {
+  display: grid;
+  grid-template: 1fr / repeat(60, 1fr);
+  width: 30%;
+}
+
+.pro.hours-progress {
+  grid-template: 1fr / repeat(12, 1fr);
+}
+
+.progress-item {
+  background: red;
+  border: 1px solid black;
+  color: red;
+}
+
+.minutes-p, .seconds-p {
+  grid-column: 1 / span 1;
+}
+
+.hours-p {
+  grid-column: 1 / span 1;
 }
