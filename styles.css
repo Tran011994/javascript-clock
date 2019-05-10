@@ -9,8 +9,8 @@ html {
 }
 
 body {
-  background: rgb(2,0,36);
-  background: linear-gradient(145deg, rgba(2,0,36,1) 30%, rgba(15,68,15,1) 87%);
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 86%, rgba(6,33,6,1) 98%);
   background-repeat: no-repeat;
   height: 100%;
   background-attachment: fixed;   
@@ -35,12 +35,18 @@ h1 {
   font-size: 4rem;
 }
 
+.page-header {
+  font-family: Ubuntu, Arial, sans-serif;
+  font-weight: 900px;
+}
+
 /* Overall clock container */
 
 .clock-container {
   display: flex;
   width: 30%;
   text-align: center;
+  font-family: Kameron, Arial, sans-serif;
 }
 
 .time-box {
