@@ -72,9 +72,9 @@ h1 {
 }
 
 .progress-item {
-  background: red;
+  background: #870000;
   border: 1px solid black;
-  color: red;
+  color: #870000;
 }
 
 .minutes-p, .seconds-p {
